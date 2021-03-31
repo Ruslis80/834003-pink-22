@@ -4,9 +4,116 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+             <li class="site-list__item site-list__item--active">
+               <a>
+                 Главная
+               </a>
+             </li>
+             <li class="site-list__item">
+               <a href="photo.html">
+                 Фотографии
+               </a>
+             </li>
+             <li class="site-list__item">
+              <a href="contest.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Фотоприложение "Пинк"</h1>
+      <section class="download">
+        <div class="page-main__header-wrapper">
+          <header class="page-main__header">
+            <h2 class="title">Взгляните на жизнь<br>
+               иначе!</h2>
+           <div class="page-main__header-download">
+             <button class="page-main__download" type="button">Скачать приложение</button>
+             <ul class="page-main__list main-list">
+               <li class="main-list__item">
+                 <a class="main-item__logo">
+                   <img class="main-item__logo-image" src="img/apple-logo.svg" width="47" height="56" alt="apple-logo">
+                 </a>
+               </li>
+               <li class="main-list__item">
+                 <a class="main-item__logo">
+                   <img class="main-item__logo-image" src="img/android-logo.svg" width="43" height="47" alt="android-logo">
+                 </a>
+               </li>
+               <li class="main-list__item">
+                 <a class="main-item__logo">
+                   <img class="main-item__logo-image" src="img/microsoft-logo.svg" width="44" height="41" alt="microsoft-logo">
+                 </a>
+               </li>
+             </ul>
+             <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+           </div>
+          </header>
+        </div>
+      </section>
+      <section class="proposal">
+        <div class="proposal__wrapper">
+         <h2 class="visually-hidden">Наши предложения</h2>
+         <div class="proposal__stats">
+           <p class="proposal__text">
+             Устали от серости<br>
+             мегаполиса?
+           </p>
+           <p class="proposal__text">
+            Нам есть, что вам<br>
+            предложить!
+          </p>
+         </div>
+         <ul class="proposal__list">
+           <li class="proposal__item">
+             <h3 class="proposal__title">Поднимает настроение</h3>
+             <p class="proposal__description">
+               Приложение позволит вам победить<br>
+               осеннюю хандру и депрессию<br>
+               буквально в несколько кликов!
+             </p>
+           </li>
+           <li class="proposal__item">
+             <h3 class="proposal__title">Меняет мир вокруг</h3>
+             <p class="proposal__description">
+                Сделайте снимок и украсте его<br>
+                смайликом или текстовой подписью,<br>
+                чтобы усилить эффект
+             </p>
+           </li>
+           <li class="proposal__item">
+             <h3 class="proposal__title">Заводит новых друзей</h3>
+             <p class="proposal__description">
+               Ставьте лайки, комментируйте,<br>
+               делитесь фотографиями с друзьями и<br>
+               заводите новых
+             </p>
+           </li>
+           <p class="proposal__description proposal__description--iphone">
+             <img class="proposal-descriptions__image" src="img/iphone 3.png" width="157" height="320" alt="iphone">
+           </p>
+         </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
