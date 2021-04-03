@@ -49,6 +49,60 @@
       </section>
       <section class="contest__forms">
         <div class="forms__wrapper">
+          <h2 class="visually-hidden">Заполните форму</h2>
+          <p>Поделитесь своей историей и получите шанс выиграть
+             ценный приз — 1000 миль на вашу бонусную карту!
+             Пожалуйста, заполните форму ниже:</p>
+          <form class="contest-forms__information names" action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+              <label class="username" for="surname">фамилия:</label>
+              <input class="surname-icon-user" id="surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
+            </p>
+            <p>
+              <label class="username" for="first-name">имя:</label>
+              <input class="first-name-icon-user" id="first-name" type="text" name="your-name" placeholder="Введите ваше имя*">
+            </p>
+            <p>
+              <label class="username" for="patronymic">отчество:</label>
+              <input class="patronymic-icon-user" id="patronymic" type="text" name="your-middle-name" placeholder="Ну и отчество тоже">
+            </p>
+          </form>
+          <form class="contest-forms__radio" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="filter-item__radio">
+              <legend>с каким приложением путешествовали?</legend>
+              <div class="radio__control">
+                <ul class="radio-control__application-on-the-phone">
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="ios" id="filter-for-ios" checked>
+                    <label class="for-ios" for="filter-for-ios">Pinc для IOS</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="android" id="filter-for-android">
+                    <label class="for-android" for="filter-for-android">Pinc на Android</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="windows-phone" id="filter-for-windows-phone">
+                    <label class="for-windows-phone" for="filter-for-windows-phone">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </form>
+          <form class="contest-forms__contacts-info" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="contact-info">
+              <legend>контактная информация</legend>
+              <div class="contact-info__wrapper">
+                <div class="contact-info__phone">
+                  <input class="phone-info" id="contact-phone" type="tel" name="your-contact" placeholder="Номер, пожалуйста"><br>
+                  <label class="your-contact-phone" for="contact-phone">номер телефона</label>
+                </div>
+                <div class="contact-info__email">
+                  <input class="email-info" id="contact-email" type="email" name="your-contact" placeholder="Введите почту*"><br>
+                  <label class="your-contact-email" for="contact-email">адрес почты</label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
 
         </div>
       </section>
