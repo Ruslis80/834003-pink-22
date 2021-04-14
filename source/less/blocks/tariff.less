@@ -3,16 +3,39 @@
   text-transform: uppercase;
 }
 
+.tariff__list {
+  border-collapse: collapse;
+}
+
+.tariff__list td {
+  border: 2px solid #E5E5E5;
+  border-radius: 1px 0px 0px 0px;
+  text-align: center;
+}
+
+.tariff__list .color {
+  background: @verydarkdesaturatedblue;
+}
+
+.tariff__list .color-line {
+  border-left: 2px solid @veryverylightgray;
+  border-right: 2px solid @veryverylightgray;
+}
+
 .tariff__description {
+  margin: 0;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  color: @white;
 }
 
 .tariff__number {
+  margin: 0;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  color: @white;
 }
 
 .cell {
