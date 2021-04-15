@@ -1,0 +1,318 @@
+.contest-forms__radio {
+  margin-top: 40px;
+}
+
+.traveling__forms {
+  fieldset {
+    border: none;
+  }
+}
+
+.traveling-action {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: @verydarkdesaturatedblue;
+}
+
+// Contest-forms__information
+
+.contest-forms__information {
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  .username {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color:@strongpink;
+    text-transform: uppercase;
+  }
+
+  input {
+    width: 238px;
+    margin-top: 5px;
+    padding: 12.5px 14px;
+    padding-left: 20px;
+    border: 2px solid @veryverylightgray;
+    border-radius: 1px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+
+  input:hover {
+    outline: none;
+    border: 2px solid @verydarkdesaturatedblue;
+    border-radius: 1px;
+  }
+
+  input:active,
+  input:focus {
+    outline: none;
+    border: 2px solid @strongpink;
+    border-radius: 1px;
+  }
+
+  ::placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+}
+
+// Radio
+
+.radio-control__application-on-the-phone {
+  list-style: none;
+}
+
+.contest-forms__radio {
+  background-color: @verylightgray;
+
+  legend {
+    padding-top: 35px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: @strongpink;
+    text-transform: uppercase;
+  }
+
+  label {
+    padding-left: 20px;
+    user-select: none;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+}
+
+.filter-option {
+  padding-bottom: 40px;
+}
+
+.filter-option:last-child {
+  padding-bottom: 10px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: 2px solid @veryverylightgray;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6.5px;
+  left: -31.5px;
+  width: 15px;
+  height: 15px;
+  background-color: @strongpink;
+  border-radius: 50%;
+}
+
+// Progress-checkbox
+
+.contest-forms__progress-checkbox {
+  background-color: @verylightgray;
+
+  .control-filler {
+    list-style: none;
+  }
+
+  legend {
+    padding-top: 35px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: @strongpink;
+    text-transform: uppercase;
+  }
+
+  label {
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -45px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: 2px solid @veryverylightgray;
+  border-radius: 1px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/forms/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+// Contacts-info
+
+.contest-forms__contacts-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: 3px solid rgba(255, 251, 0, 0.8);
+  outline-offset: -3px;
+
+  label {
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: @strongpink;
+  }
+
+  input {
+    width: 238px;
+    margin-top: 5px;
+    padding: 12.5px 14px;
+    padding-left: 20px;
+    border: 2px solid @veryverylightgray;
+    border-radius: 1px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+
+  input:hover {
+    outline: none;
+    border: 2px solid @verydarkdesaturatedblue;
+    border-radius: 1px;
+  }
+
+  input:active,
+  input:focus {
+    outline: none;
+    border: 2px solid @strongpink;
+    border-radius: 1px;
+  }
+
+  ::placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+}
+
+// Textarea
+
+.contest-forms__textarea {
+  margin-bottom: 45px;
+  outline: 3px solid rgba(115, 255, 0, 0.8);
+  outline-offset: -3px;
+
+  legend {
+    padding-top: 35px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: @strongpink;
+    text-transform: uppercase;
+  }
+
+  textarea {
+    width: 251px;
+    padding: 14px 3px 29px 18px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+    border: 2px solid @veryverylightgray;
+    border-radius: 1px;
+  }
+
+  textarea:hover {
+    outline: none;
+    border: 2px solid @verydarkdesaturatedblue;
+    border-radius: 1px;
+  }
+
+  textarea:active,
+  textarea:focus {
+    outline: none;
+    border: 2px solid @strongpink;
+    border-radius: 1px;
+  }
+
+  ::placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+}
+
+// Button-form
+
+.button-form {
+  padding: 12.5px 44.3px;
+  background-color: @darkcyanlimegreen;
+  border: 2px solid @darkcyanlimegreen;
+  border-radius: 1px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @white;
+}
+
+.button-form:hover {
+  outline: none;
+  background: @limegreen;
+  border: 2px solid @limegreen;
+  border-radius: 1px;
+}
+
+.button-form:focus,
+.button-form:active {
+  outline: none;
+  color: fade(@white, 70%);
+}
+
+.attention {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @verydarkdesaturatedblue;
+
+  b {
+    color: @strongpink;
+  }
+}
