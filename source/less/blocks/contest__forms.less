@@ -1,0 +1,55 @@
+.traveling-action {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: @verydarkdesaturatedblue;
+}
+
+// Contest-forms__information
+
+.contest-forms__information {
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  .username {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color:@strongpink;
+    text-transform: uppercase;
+  }
+
+  input {
+    width: 238px;
+    margin-top: 5px;
+    padding: 12.5px 14px;
+    padding-left: 20px;
+    border: 2px solid @veryverylightgray;
+    border-radius: 1px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+
+  input:hover {
+    outline: none;
+    border: 2px solid @verydarkdesaturatedblue;
+    border-radius: 1px;
+  }
+
+  input:active,
+  input:focus {
+    outline: none;
+    border: 2px solid @strongpink;
+    border-radius: 1px;
+  }
+
+  ::placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+  }
+}
