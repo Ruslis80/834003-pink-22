@@ -1,3 +1,7 @@
+.contest-forms__radio {
+  margin-top: 40px;
+}
+
 .traveling__forms {
   fieldset {
     border: none;
@@ -62,10 +66,15 @@
 
 // Radio
 
+.radio-control__application-on-the-phone {
+  list-style: none;
+}
+
 .contest-forms__radio {
   background-color: @verylightgray;
 
   legend {
+    padding-top: 35px;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
@@ -74,11 +83,49 @@
   }
 
   label {
+    padding-left: 20px;
+    user-select: none;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
     color: @verydarkdesaturatedblue;
   }
+}
+
+.filter-option {
+  padding-bottom: 40px;
+}
+
+.filter-option:last-child {
+  padding-bottom: 10px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: 2px solid @veryverylightgray;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6.5px;
+  left: -31.5px;
+  width: 15px;
+  height: 15px;
+  background-color: @strongpink;
+  border-radius: 50%;
 }
 
 // Progress-checkbox
@@ -86,7 +133,12 @@
 .contest-forms__progress-checkbox {
   background-color: @verylightgray;
 
+  .control-filler {
+    list-style: none;
+  }
+
   legend {
+    padding-top: 35px;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
@@ -95,6 +147,7 @@
   }
 
   label {
+    padding-left: 20px;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
@@ -102,9 +155,35 @@
   }
 }
 
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -45px;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: 2px solid @veryverylightgray;
+  border-radius: 1px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/forms/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 // Contacts-info
 
 .contest-forms__contacts-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
   outline: 3px solid rgba(255, 251, 0, 0.8);
   outline-offset: -3px;
 
@@ -154,10 +233,12 @@
 // Textarea
 
 .contest-forms__textarea {
+  margin-bottom: 45px;
   outline: 3px solid rgba(115, 255, 0, 0.8);
   outline-offset: -3px;
 
   legend {
+    padding-top: 35px;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
