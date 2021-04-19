@@ -5,13 +5,25 @@
   color: @verydarkdesaturatedblue;
 }
 
-.range__filter-wrapper {
-  display: flex;
-  border-bottom: 1px solid rgba(40,54,69,10%);
+.range__filter {
+  margin-bottom: 38px;
+}
 
-  img {
-    margin-bottom: 34px;
-  }
+.range__filter svg {
+  padding-left: 35px;
+}
+
+.range__filter svg:hover path {
+  fill: rgba(40,54,69,50%);
+}
+
+.range__filter svg:focus path,
+.range__filter svg:active path {
+  fill: @strongpink;
+}
+
+.range__filter-wrapper {
+  border-bottom: 1px solid rgba(40,54,69,10%);
 }
 
 .range__control {
