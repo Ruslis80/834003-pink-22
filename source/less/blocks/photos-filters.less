@@ -1,0 +1,95 @@
+.photos__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @verydarkdesaturatedblue;
+}
+
+.range__filter {
+  margin-bottom: 38px;
+}
+
+.range__filter svg {
+  padding-left: 35px;
+}
+
+.range__filter svg:hover path {
+  fill: rgba(40,54,69,50%);
+}
+
+.range__filter svg:focus path,
+.range__filter svg:active path {
+  fill: @strongpink;
+}
+
+.range__filter-wrapper {
+  border-bottom: 1px solid rgba(40,54,69,10%);
+}
+
+.range__control {
+  position: relative;
+  width: 240px;
+  padding-left: 29px;
+  margin-top: 20px;
+  margin-bottom: 34px;
+
+  .scale {
+    height: 2px;
+    background: @verydarkdesaturatedblue;
+  }
+
+  .toggle {
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    background-color: @white;
+    border: 2px solid @strongpink;
+    border-radius: 50%;
+  }
+}
+
+.button-user {
+  padding: 21px 90px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid @strongpink;
+  border-radius: 30px;
+  background-color: @white;
+  color: @strongpink;
+}
+
+.button-user:hover {
+  outline: none;
+  background-color: @strongpink;
+  color: @white;
+}
+
+.button-user:focus,
+.button-user:active {
+  outline: none;
+  background-color: @strongpink;
+  color: rgba(255,255,255,30%);
+}
+
+.button-cancel {
+  border: 3px solid rgba(40,54,69,10%);
+  color: rgba(40,54,69,10%);
+}
+
+.button-cancel:hover {
+  outline: none;
+  border: 3px solid rgba(40,54,69,30%);
+  background-color: @verylightgray;
+  color: rgba(40,54,69,30%);
+}
+
+.button-cancel:focus,
+.button-cancel:active {
+  outline: none;
+  background-color: rgba(40,54,69,30%);
+  color: rgba(255,255,255,30%)
+}
