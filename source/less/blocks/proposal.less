@@ -1,15 +1,63 @@
-.proposal__stats {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28.8px;
-  color: @verydarkdesaturatedblue;
+.proposal {
+  margin-top: 46px;
+  margin-bottom: 70px;
+}
+
+.proposal__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  outline: 3px solid rgba(28, 6, 151, 0.842);
+  outline-offset: -3px;
+
+  .proposal__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: @verydarkdesaturatedblue;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .proposal {
+    margin-top: 58px;
+  }
+
+  .proposal__wrapper {
+    width: 620px;
+    margin: 0 auto;
+
+    .proposal__text {
+      margin: 0;
+      font-size: 40px;
+      line-height: 54px;
+    }
+ }
+}
+
+@media (min-width: @desktop-width) {
+  .proposal {
+    margin-top: 77px;
+  }
+
+  .proposal__wrapper {
+    width: 940px;
+
+    .proposal__text {
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+}
+
+.our__proposals {
+  background:
+  url(../../img/gallery/page-main/proposal/iphonescreen-3.jpg) no-repeat 33.5px 470px,
+  url(../../img/gallery/page-main/proposal/iphone3.png) no-repeat 25px 435px,
+  @verylightgray;
 }
 
 .proposal__list {
-  background:
-    url(../../img/gallery/page-main/proposal/iphonescreen-3.jpg) no-repeat 33.5px 470px,
-    url(../../img/gallery/page-main/proposal/iphone3.png) no-repeat 25px 435px,
-    @verylightgray;
   list-style: none;
   padding: 0;
 
