@@ -1,0 +1,39 @@
+.research {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    .research__wrapper {
+      width: 620px;
+      margin: 0 auto;
+      outline: 3px solid rgba(133, 202, 179, 0.945);
+      outline-offset: -3px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    .research__wrapper {
+      width: 940px;
+    }
+  }
+}
