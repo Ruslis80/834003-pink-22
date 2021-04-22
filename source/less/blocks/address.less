@@ -3,8 +3,6 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  outline: 3px solid rgba(79, 134, 151, 0.842);
-  outline-offset: -3px;
 
   .contacts {
     text-align: center;
@@ -62,8 +60,8 @@
   .address__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     width: 620px;
+    justify-items: center;
 
     .address__title {
       width: 370px;
@@ -106,6 +104,7 @@
     .address-phone__contacts {
       grid-column-start: 1;
       grid-column-end: 2;
+      padding-right: 15px;
     }
 
     .address-company__contacts {
@@ -113,11 +112,13 @@
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
+      padding-right: 35px;
     }
 
     .address-mail__contacts {
       grid-column-start: 3;
       grid-column-end: 4;
+      padding-right: 25px;
     }
   }
 }
