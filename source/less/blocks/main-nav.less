@@ -3,10 +3,21 @@
   outline-offset: -3px;
 }
 
+
 .main-nav__list {
   margin: 0;
+  margin-top: 37px;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 620px;
+  }
 }
 
 .main-nav__list a {

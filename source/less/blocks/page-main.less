@@ -1,47 +1,246 @@
-.page-main__download {
-  color: @white;
-  background:
-    url(../../img/gallery/page-main/screen.jpg) no-repeat 104px 32px,
-    url(../../img/gallery/page-main/phone.png) no-repeat;
-  outline: 5px solid rgba(221, 208, 27, 0.932);
-  outline-offset: -5px;
+.proposal {
+  margin-top: 46px;
+  margin-bottom: 70px;
+}
 
-  .page-main__header-download {
-    background-color: @verydarkblue;
-    margin-top: 210px;
+.proposal__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  outline: 3px solid rgba(28, 6, 151, 0.842);
+  outline-offset: -3px;
+
+  .proposal__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: @verydarkdesaturatedblue;
+    text-align: center;
   }
 }
 
-.page-download {
-  padding: 21px 38px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  background-color: @verydarkblue;
-  color: @white;
-  border: 3px solid @white;
-  border-radius: 29px;
+@media (min-width: @tablet-width) {
+  .proposal {
+    margin-top: 58px;
+  }
+
+  .proposal__wrapper {
+    width: 620px;
+    margin: 0 auto;
+
+    .proposal__text {
+      margin: 0;
+      font-size: 40px;
+      line-height: 54px;
+    }
+ }
 }
 
-.page-download:hover {
-  background-color: @white;
-  color: @strongpink;
+@media (min-width: @desktop-width) {
+  .proposal {
+    margin-top: 77px;
+  }
+
+  .proposal__wrapper {
+    width: 940px;
+
+    .proposal__text {
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
 }
 
-.page-download:focus,
-.page-download:active {
-  outline: none;
-  background-color: @white;
-  color: rgba(210,40,86,30%);
+// Our__proposals
+
+.our__proposals {
+  background:
+  url(../../img/gallery/page-main/proposal/iphonescreen-3.jpg) no-repeat 33.5px 470px,
+  url(../../img/gallery/page-main/proposal/iphone3.png) no-repeat 25px 435px,
+  @verylightgray;
 }
 
-.page-main__list {
-  list-style: none;
+.our-proposals__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 280px;
+  margin: 0 auto;
+  outline: 3px solid rgba(110, 6, 151, 0.842);
+  outline-offset: -3px;
+
+  .proposal__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+
+    .proposal__title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .proposal__description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .proposal__item {
+      text-align: center;
+    }
+
+    .proposal__item:last-child {
+      padding-bottom: 325px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .our-proposals__wrapper {
+    width: 620px;
+    grid-template-columns: 1fr 1fr;
+
+    .proposal__list {
+      grid-column-start: 2;
+      grid-column-end: 4;
+
+      .proposal__item {
+        text-align: left;
+      }
+
+      .proposal__item:last-child {
+        padding-bottom: 49px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .our-proposals__wrapper {
+    width: 940px;
+    grid-template-columns: 1fr;
+
+    .proposal__list {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .proposal__item {
+        width: 300px;
+        padding-top: 307px;
+      }
+
+      .proposal__item:last-child {
+        padding-bottom: 0;
+      }
+
+      .proposal__title {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+
+      .proposal__description {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// Research
+
+.research {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.header-download__text {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
+@media (min-width: @tablet-width) {
+  .research {
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-top: 75px;
+
+    .research__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 620px;
+      margin: 0 auto;
+      outline: 3px solid rgba(133, 202, 179, 0.945);
+      outline-offset: -3px;
+    }
+
+    .research-title__wrapper {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      margin-bottom: 50px;
+    }
+
+    .research__title {
+      width: 168px;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .research__item {
+      padding-left: 5px;
+      text-align: left;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .research__larger {
+      font-size: 14px;
+      line-height: 24px;
+      color: @strongpink;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    background-color: @verylightgray;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    .research__wrapper {
+      grid-template-columns: 1fr max-content;
+      width: 940px;
+    }
+
+    .research-title__wrapper {
+      width: 534px;
+      margin-top: 115px;
+      margin-bottom: 120px;
+    }
+
+    .research__title {
+      width: auto;
+      line-height: 30px;
+    }
+
+    .research__item {
+      padding: 0;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .research__larger {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
 }

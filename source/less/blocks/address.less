@@ -1,14 +1,50 @@
-.address__title {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28.8px;
-  color: @verydarkdesaturatedblue;
-}
+.address__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 
-.address__text {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
+  .contacts {
+    text-align: center;
+  }
+
+  .address__title {
+    margin-top: 50px;
+    margin-bottom: 14px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    color: @verydarkdesaturatedblue;
+  }
+
+  .address__text {
+    margin: 0;
+    margin-top: 31px;
+    margin-bottom: 13px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .contacts__phone {
+    margin: 0;
+  }
+
+  .contacts__mail {
+    margin: 0;
+  }
+
+  .address__phone,
+  .address__mail,
+  .contacts__company {
+    margin: 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: none;
+    color: @strongpink;
+  }
 }
 
 .address__mail:hover {
@@ -20,12 +56,69 @@
   color: rgba(40,54,69,30%);
 }
 
-.address__phone,
-.address__mail,
-.contacts__company {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-  text-decoration: none;
-  color: @strongpink;
+@media (min-width: @tablet-width) {
+  .address__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 620px;
+    justify-items: center;
+
+    .address__title {
+      width: 370px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 54px;
+    }
+
+    .address-phone__contacts {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .address-mail__contacts {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .address-company__contacts {
+      width: 211px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address__wrapper {
+    width: 940px;
+
+    .address__title {
+      width: 462px;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 68px;
+    }
+
+    .address-phone__contacts {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      padding-right: 15px;
+    }
+
+    .address-company__contacts {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      padding-right: 35px;
+    }
+
+    .address-mail__contacts {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      padding-right: 25px;
+    }
+  }
 }
