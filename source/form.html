@@ -63,44 +63,50 @@
         <div class="forms__wrapper">
           <form class="traveling__forms" action="https://echo.htmlacademy.ru" method="POST">
             <h2 class="visually-hidden">Заполните форму</h2>
-            <p class="traveling-action">Поделитесь своей историей и получите шанс выиграть
-              ценный приз — 1000 миль на вашу бонусную карту!
-              Пожалуйста, заполните форму ниже:
-            </p>
-            <div class="contest-forms__information names">
-              <p>
-                <label class="username" for="surname">фамилия:</label><br>
-                <input class="surname-icon-user" id="surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
-              </p>
-              <p>
-                <label class="username" for="first-name">имя:</label><br>
-                <input class="first-name-icon-user" id="first-name" type="text" name="your-name" placeholder="Введите ваше имя*">
-              </p>
-              <p>
-                <label class="username" for="patronymic">отчество:</label><br>
-                <input class="patronymic-icon-user" id="patronymic" type="text" name="your-middle-name" placeholder="Ну и отчество тоже">
+            <div class="traveling-action__wrapper">
+              <p class="traveling-action">Поделитесь своей историей и получите шанс выиграть
+                ценный приз — 1000 миль на вашу бонусную карту!
+                Пожалуйста, заполните форму ниже:
               </p>
             </div>
-            <div class="contest-forms__radio">
-              <fieldset class="filter-item__radio">
-                <legend>с каким приложением путешествовали?</legend>
-                <div class="radio__control">
-                  <ul class="radio-control__application-on-the-phone">
-                    <li class="filter-option filter-radio">
-                      <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="ios" id="filter-for-ios" checked>
-                      <label class="for-ios" for="filter-for-ios">Pinc для IOS</label>
-                    </li>
-                    <li class="filter-option filter-radio">
-                      <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="android" id="filter-for-android">
-                      <label class="for-android" for="filter-for-android">Pinc на Android</label>
-                    </li>
-                    <li class="filter-option filter-radio">
-                      <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="windows-phone" id="filter-for-windows-phone">
-                      <label class="for-windows-phone" for="filter-for-windows-phone">Windows Phone</label>
-                    </li>
-                  </ul>
-                </div>
-              </fieldset>
+            <div class="contest-forms__information names">
+              <div class="contest-forms__information-wrapper">
+                <p>
+                  <label class="username" for="surname">фамилия:</label>
+                  <input class="surname-icon-user" id="surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
+                </p>
+                <p>
+                  <label class="username" for="first-name">имя:</label>
+                  <input class="first-name-icon-user" id="first-name" type="text" name="your-name" placeholder="Введите ваше имя*">
+                </p>
+                <p>
+                  <label class="username" for="patronymic">отчество:</label>
+                  <input class="patronymic-icon-user" id="patronymic" type="text" name="your-middle-name" placeholder="Ну и отчество тоже">
+                </p>
+              </div>
+            </div>
+            <div class="radio__wrapper">
+              <div class="contest-forms__radio">
+                <fieldset class="filter-item__radio">
+                  <legend>с каким приложением путешествовали?</legend>
+                  <div class="radio__control">
+                    <ul class="radio-control__application-on-the-phone">
+                      <li class="filter-option filter-radio">
+                        <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="ios" id="filter-for-ios" checked>
+                        <label class="for-ios" for="filter-for-ios">Pinc для IOS</label>
+                      </li>
+                      <li class="filter-option filter-radio">
+                        <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="android" id="filter-for-android">
+                        <label class="for-android" for="filter-for-android">Pinc на Android</label>
+                      </li>
+                      <li class="filter-option filter-radio">
+                        <input class="visually-hidden filter-input-radio filter-input" type="radio" name="for-applications" value="windows-phone" id="filter-for-windows-phone">
+                        <label class="for-windows-phone" for="filter-for-windows-phone">Windows Phone</label>
+                      </li>
+                    </ul>
+                  </div>
+                </fieldset>
+              </div>
             </div>
             <div class="contest-forms__contacts-info">
               <fieldset class="contact-info">

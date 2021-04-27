@@ -1,3 +1,15 @@
+@media (min-width: @desktop-width) {
+ .forms__wrapper {
+   width: 940px;
+   margin: 0 auto;
+  }
+}
+
+.traveling__forms {
+  display: flex;
+  flex-direction: column;
+}
+
 .contest-forms__radio {
   margin-top: 40px;
 }
@@ -8,18 +20,43 @@
   }
 }
 
-.traveling-action {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: @verydarkdesaturatedblue;
+.traveling-action__wrapper {
+  display: flex;
+  .traveling-action {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: @verydarkdesaturatedblue;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .traveling-action__wrapper {
+   width: 620px;
+   margin: 0 auto;
+   .traveling-action{
+     padding: 100px 40px 82px 40px;
+    font-size: 18px;
+    line-height: 30px;
+   }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .traveling-action__wrapper {
+   width: 940px;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   .traveling-action {
+    padding: 100px 100px 85px 100px;
+   }
+  }
 }
 
 // Contest-forms__information
 
 .contest-forms__information {
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
 
   .username {
     margin-left: 20px;
@@ -61,6 +98,52 @@
     font-size: 18px;
     line-height: 30px;
     color: @verydarkdesaturatedblue;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contest-forms__information-wrapper {
+    width: 620px;
+    margin: 0 auto;
+    outline: 3px solid rgba(255, 0, 0, 0.8);
+    outline-offset: -3px;
+
+    p {
+      margin: 0;
+    }
+
+    .username {
+      margin: 0;
+      padding-right: 20px;
+    }
+
+    input {
+      margin-top: 56px;
+      padding-right: 255px;
+    }
+
+    .first-name-icon-user {
+      padding-right: 295px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .traveling__forms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contest-forms__information-wrapper {
+    margin: 0;
+    width: 440px;
+
+    input {
+      padding-right: 74px;
+    }
+
+    .first-name-icon-user {
+      padding-right: 114px;
+    }
   }
 }
 
@@ -126,6 +209,58 @@
   height: 15px;
   background-color: @strongpink;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .contest-forms__radio {
+   width: 620px;
+   margin: 0 auto;
+   margin-top: 70px;
+   background-color: @white;
+
+    fieldset {
+     border: 2px solid @veryverylightgray;
+    }
+
+    legend {
+      padding: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+
+    .radio__control {
+      margin-left: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-forms__radio {
+    width: 431px;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: @white;
+    outline: 3px solid rgba(231, 9, 65, 0.959);
+    outline-offset: -3px;
+
+    .filter-item__radio {
+      border: 2px solid @veryverylightgray;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    .filter-option {
+      padding-top: 10px;
+    }
+
+    .filter-option:nth-child(1) {
+      padding-top: 20px;
+    }
+  }
 }
 
 // Progress-checkbox
