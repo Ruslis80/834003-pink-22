@@ -65,8 +65,7 @@
             <h2 class="visually-hidden">Заполните форму</h2>
             <div class="traveling-action__wrapper">
               <p class="traveling-action">Поделитесь своей историей и получите шанс выиграть
-                ценный приз — 1000 миль на вашу бонусную карту!
-                Пожалуйста, заполните форму ниже:
+                ценный приз — 1000 миль на вашу бонусную карту!<span class="action-request">Пожалуйста, заполните форму ниже:</span>
               </p>
             </div>
             <div class="contest-forms__information names">
@@ -109,52 +108,60 @@
               </div>
             </div>
             <div class="contest-forms__contacts-info">
-              <fieldset class="contact-info">
-                <legend class="visually-hidden">контактная информация</legend>
-                <div class="contact-info__wrapper">
-                  <div class="contact-info__phone">
-                    <label class="your-contact-phone" for="contact-phone">номер телефона</label><br>
-                    <input class="phone-info" id="contact-phone" type="tel" name="your-contact" placeholder="Номер, пожалуйста"><br>
+              <fieldset class="contacts-info">
+                <legend>контактная информация</legend>
+                <div class="contacts-info__wrapper">
+                  <div class="contacts-info__phone">
+                    <label class="your-contact-phone" for="contact-phone">номер телефона</label>
+                    <input class="phone-info" id="contact-phone" type="tel" name="your-contact" placeholder="Номер, пожалуйста">
                   </div>
-                  <div class="contact-info__email">
-                    <label class="your-contact-email" for="contact-email">адрес почты</label><br>
-                    <input class="email-info" id="contact-email" type="email" name="your-contact" placeholder="Введите почту*"><br>
+                  <div class="contacts-info__email">
+                    <label class="your-contact-email" for="contact-email">адрес почты</label>
+                    <input class="email-info" id="contact-email" type="email" name="your-contact" placeholder="Введите почту*">
                   </div>
                 </div>
               </fieldset>
             </div>
             <div class="contest-forms__progress-checkbox">
-              <fieldset class="progress-form">
-                <legend>ваши безбашенные достижения в путешествии</legend>
-                <div class="checkbox-control">
-                  <ul class="control-filler">
-                    <li class="filter-option filter-checkbox">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="selfie" id="filter-selfie" checked>
-                      <label for="filter-selfie">Сделал селфи с акулой</label>
-                    </li>
-                    <li class="filter-option filter-checkbox">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="beach" id="filter-beach" checked>
-                      <label for="filter-beach">Обгорел на пляже</label>
-                    </li>
-                    <li class="filter-option filter-checkbox">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="actor" id="filter-actor">
-                      <label for="filter-actor">Видел Чака Норриса</label>
-                    </li>
-                    <li class="filter-option filter-checkbox">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="souvenir" id="filter-souvenir">
-                      <label for="filter-souvenir">Накупил сувениров</label>
-                    </li>
-                    <li class="filter-option filter-checkbox">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="tower" id="filter-tower" checked>
-                      <label for="filter-tower">Удержал башню</label>
-                    </li>
-                    <li class="filter-option filter-checkbox">
-                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel">
-                      <label for="filter-hotel">Разгромил отель</label>
-                    </li>
-                  </ul>
-                </div>
-              </fieldset>
+              <div class="progress-checkbox__wrapper">
+                <fieldset class="progress-form">
+                  <legend>ваши безбашенные достижения в путешествии</legend>
+                  <div class="checkbox-control">
+                    <ul class="control-filler">
+                      <div class="filter-option__wrapper">
+                        <li class="filter-option filter-checkbox">
+                          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="selfie" id="filter-selfie" checked>
+                          <label for="filter-selfie">Сделал селфи с акулой</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="beach" id="filter-beach" checked>
+                          <label for="filter-beach">Обгорел на пляже</label>
+                        </li>
+                      </div>
+                      <div class="filter-option__wrapper">
+                        <li class="filter-option filter-checkbox">
+                          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="actor" id="filter-actor">
+                          <label for="filter-actor">Видел Чака Норриса</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="souvenir" id="filter-souvenir">
+                          <label for="filter-souvenir">Накупил сувениров</label>
+                        </li>
+                      </div>
+                      <div class="filter-option__wrapper">
+                        <li class="filter-option filter-checkbox">
+                          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="tower" id="filter-tower" checked>
+                          <label for="filter-tower">Удержал башню</label>
+                        </li>
+                        <li class="filter-option filter-checkbox">
+                          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel">
+                          <label for="filter-hotel">Разгромил отель</label>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </fieldset>
+              </div>
             </div>
             <div class="contest-forms__textarea">
               <fieldset class="textarea-emotion">
@@ -164,10 +171,12 @@
                 </p>
               </fieldset>
             </div>
-            <button class="button-form" type="submit">Отправить форму</button>
-            <p class="attention">
-              <b>*</b>-обязательные для заполнения поля
-            </p>
+            <div class="button-form__wrapper">
+              <button class="button-form" type="submit">Отправить форму</button>
+              <p class="attention">
+                <b>*</b>-обязательные <span>для заполнения</span> поля
+              </p>
+            </div>
           </form>
         </div>
       </section>
@@ -211,7 +220,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal__error">
+    <section class="visually-hidden modal__error">
       <div class="modal__background-text">
         <div class="modal-error__wrapper">
           <h2 class="error-text modal-text">Что-то пошло не так!</h2>
@@ -226,7 +235,7 @@
         </div>
       </div>
     </section>
-    <section class="modal__despatch">
+    <section class="visually-hidden modal__despatch">
       <div class="modal__background-text">
         <div class="modal-despatch__wrapper">
           <h2 class="despatch-text modal-text">Ваша заявка отправлена</h2>
