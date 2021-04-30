@@ -6,8 +6,6 @@
 .proposal__wrapper {
   width: 280px;
   margin: 0 auto;
-  outline: 3px solid rgba(28, 6, 151, 0.842);
-  outline-offset: -3px;
 
   .proposal__text {
     font-weight: 300;
@@ -53,10 +51,7 @@
 // Our__proposals
 
 .our__proposals {
-  background:
-  url(../../img/gallery/page-main/proposal/iphonescreen-3.jpg) no-repeat 33.5px 470px,
-  url(../../img/gallery/page-main/proposal/iphone3.png) no-repeat 25px 435px,
-  @verylightgray;
+  background-color: @verylightgray;
 }
 
 .our-proposals__wrapper {
@@ -64,8 +59,9 @@
   grid-template-columns: 1fr;
   width: 280px;
   margin: 0 auto;
-  outline: 3px solid rgba(110, 6, 151, 0.842);
-  outline-offset: -3px;
+  background:
+  url(../../img/gallery/page-main/proposal/mobile/iphonescreen.jpg) no-repeat 50% 550px,
+  url(../../img/gallery/page-main/proposal/mobile/iphone.png) no-repeat 50% 515px;
 
   .proposal__list {
     display: flex;
@@ -99,6 +95,9 @@
   .our-proposals__wrapper {
     width: 620px;
     grid-template-columns: 1fr 1fr;
+    background:
+    url(../../img/gallery/page-main/proposal/tablet/iphone-screen.jpg) no-repeat 5% 80px,
+    url(../../img/gallery/page-main/proposal/tablet/iphone.png) no-repeat 1% 15px;
 
     .proposal__list {
       grid-column-start: 2;
@@ -119,6 +118,9 @@
   .our-proposals__wrapper {
     width: 940px;
     grid-template-columns: 1fr;
+    background:
+    url(../../img/gallery/page-main/proposal/desktop/iphone-screen1.jpg) no-repeat 9% 45px,
+    url(../../img/gallery/page-main/proposal/desktop/iphone1.png) no-repeat 8% 5px;
 
     .proposal__list {
       grid-column-start: 1;
