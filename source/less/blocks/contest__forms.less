@@ -1,17 +1,14 @@
 @media (min-width: @desktop-width) {
  .forms__wrapper {
-   width: 940px;
+   width: 936px;
    margin: 0 auto;
   }
 }
 
 .traveling__forms {
-  display: flex;
-  flex-direction: column;
-}
-
-.contest-forms__radio {
-  margin-top: 40px;
+  //display: flex;
+  //flex-direction: column;
+  display: grid;
 }
 
 .traveling__forms {
@@ -24,6 +21,8 @@
   display: flex;
   width: 280px;
   margin: 0 auto;
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
 
   .traveling-action {
     font-weight: normal;
@@ -33,35 +32,46 @@
     text-align: center;
   }
 
-  .action-request {
-    display: none;
+  span{
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
 @media (min-width: @tablet-width) {
   .traveling-action__wrapper {
-   width: 620px;
+   width: 616px;
    margin: 0 auto;
 
    .traveling-action {
-    padding: 100px 40px 82px 40px;
-    font-size: 18px;
-    line-height: 30px;
+      padding: 100px 40px 82px 40px;
+      font-size: 18px;
+      line-height: 30px;
     }
 
-    .action-request {
-      display: block;
+    span {
+      clip: auto;
+      width: auto;
+      height: auto;
+      margin: 0;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .traveling-action__wrapper {
-   width: 940px;
+   width: 936px;
    grid-column-start: 1;
    grid-column-end: 3;
+
    .traveling-action {
-     padding: 100px 100px 85px 100px;
+     padding: 100px 90px 85px 90px;
     }
   }
 }
@@ -119,7 +129,7 @@
 
 @media (min-width: @tablet-width) {
   .contest-forms__information-wrapper {
-    width: 620px;
+    width: 616px;
     margin: 0 auto;
 
     p {
@@ -128,7 +138,7 @@
 
     .username {
       margin: 0;
-      padding-right: 20px;
+      padding-right: 16px;
     }
 
     input {
@@ -174,6 +184,7 @@
 .contest-forms__radio {
   width: 280px;
   margin: 0 auto;
+  margin-top: 40px;
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
 
@@ -239,7 +250,7 @@
   }
 
   .contest-forms__radio {
-   width: 620px;
+   width: 616px;
    margin: 0 auto;
    margin-top: 70px;
 
@@ -300,6 +311,8 @@
   margin: 0 auto;
   margin-top: 42px;
   margin-bottom: 20px;
+  grid-row-start: 4;
+  grid-row-end: 5;
 
   legend {
     width: 1px;
@@ -428,6 +441,8 @@
     margin-bottom: 64px;
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 
     .contacts-info__wrapper {
       display: flex;
@@ -462,6 +477,8 @@
 
 .contest-forms__progress-checkbox {
   background-color: @verylightgray;
+  grid-row-start: 3;
+  grid-row-end: 4;
 
   .progress-checkbox__wrapper {
     width: 280px;
@@ -528,6 +545,8 @@
 @media (min-width: @tablet-width) {
   .contest-forms__progress-checkbox {
     background-color: @white;
+    grid-row-start: 5;
+    grid-row-end: 6;
 
     .progress-checkbox__wrapper {
       width: 616px;
@@ -558,6 +577,8 @@
   .contest-forms__progress-checkbox{
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 
     .progress-checkbox__wrapper {
       width: 936px;
@@ -672,6 +693,8 @@
     margin-top: 69px;
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
 
     fieldset {
       width: 936px;
@@ -761,5 +784,7 @@
     margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
   }
 }
