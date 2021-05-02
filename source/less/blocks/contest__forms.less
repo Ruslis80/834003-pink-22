@@ -491,10 +491,6 @@
     list-style: none;
   }
 
-  .filter-option__wrapper {
-    margin-bottom: 30px;
-  }
-
   legend {
     padding-top: 35px;
     padding-left: 20px;
@@ -589,11 +585,27 @@
     }
 
     .control-filler {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       margin-left: 0;
       margin-bottom: 60px;
+    }
+
+    .filter-option {
+      justify-self: left;
+      padding-left: 67px;
+    }
+
+    .filter-plage {
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .filter-memento {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
     }
   }
 }
