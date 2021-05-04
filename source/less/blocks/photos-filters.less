@@ -1,9 +1,108 @@
-.range__filter {
-  margin-bottom: 38px;
+.photos-filters {
+  background-color: @verylightgray;
 }
 
-.range__filter svg {
-  padding-left: 35px;
+.photos-filters__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  .range__filter {
+    margin-bottom: 38px;
+    padding-top: 43px;
+  }
+
+  .range__filter svg {
+    padding-left: 35px;
+  }
+
+  .range__filter-wrapper {
+    border-bottom: 1px solid rgba(40,54,69,10%);
+  }
+
+  .range__filter-none {
+    display: none;
+  }
+
+  .post-it__user-foto {
+    padding-bottom: 41px;
+  }
+
+  .button-post-it {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .svg-none {
+      display: none;
+    }
+
+    .range__filter-none {
+      display: block;
+    }
+
+    .range__filter-wrapper {
+      display: flex;
+      padding-top: 35px;
+      padding-bottom: 34px;
+
+      .contrast {
+        padding-left: 30px;
+      }
+    }
+
+    .range__filter svg {
+      padding: 0;
+      padding-left: 20px;
+    }
+
+    .post-it__user-foto {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      padding-top: 37px;
+      padding-bottom: 54px;
+    }
+
+    .button-user {
+      margin-left: 25px;
+      padding: 21px 81px;
+    }
+
+    .button-cancel {
+      padding: 21px 93.5px;
+    }
+
+    .button-post-it {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+
+    .range__filter-wrapper {
+      .contrast {
+        padding-left: 40px;
+      }
+    }
+
+    .range__filter svg {
+      padding-left: 30px;
+    }
+
+    .button-user {
+      margin-left: 35px;
+      padding: 21px 42px;
+    }
+
+    .button-cancel {
+      padding: 21px 55px;
+    }
+  }
 }
 
 .range__filter svg:hover path {
@@ -15,14 +114,10 @@
   fill: @strongpink;
 }
 
-.range__filter-wrapper {
-  border-bottom: 1px solid rgba(40,54,69,10%);
-}
-
 .range__control {
   position: relative;
   width: 240px;
-  padding-left: 29px;
+  margin-left: 29px;
   margin-top: 20px;
   margin-bottom: 34px;
 
@@ -41,6 +136,14 @@
     background-color: @white;
     border: 2px solid @strongpink;
     border-radius: 50%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
   }
 }
 
@@ -69,6 +172,7 @@
 }
 
 .button-cancel {
+  padding: 21px 103px;
   border: 3px solid rgba(40,54,69,10%);
   color: rgba(40,54,69,10%);
 }
