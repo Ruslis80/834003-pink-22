@@ -38,6 +38,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header__wrapper {
+    flex-direction: row;
     width: 940px;
     height: 110px;
   }
@@ -53,6 +54,10 @@
   padding-top: 22px;
   padding-bottom: 21px;
   text-decoration: none;
+
+  .desktop-logo {
+    display: none;
+  }
 
   .header-logo {
     display: none;
@@ -74,6 +79,18 @@
 
   @media (min-width: @desktop-width) {
     height: 40px;
+
+    .desktop-logo {
+      display: inline-block;
+    }
+
+    .header-logo {
+      display: none;
+    }
+
+    .page-header__logo-image {
+      display: none;
+    }
   }
 }
 
