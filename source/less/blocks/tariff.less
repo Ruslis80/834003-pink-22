@@ -1,51 +1,210 @@
 .tariff {
   background-color: @verylightgray;
   text-transform: uppercase;
-}
+  overflow-x: hidden;
 
-.tariff__list {
-  border-collapse: collapse;
-
-  td {
-    border: 2px solid #E5E5E5;
-    border-radius: 1px 0px 0px 0px;
-    text-align: center;
-  }
-
-  .color {
-    background: @verydarkdesaturatedblue;
-  }
-
-  .color-line {
-    border-left: 2px solid @veryverylightgray;
-    border-right: 2px solid @veryverylightgray;
-  }
-
-  .tariff__description {
-    margin: 0;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    color: @white;
-  }
-
-  .tariff__number {
-    margin: 0;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    color: @white;
-  }
-
-  .cell {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 30px;
+  @media (min-width: @tablet-width) {
+    overflow-x: visible;
   }
 }
 
+.tariff__wrapper {
+  width: 280px;
+  margin: 0 auto;
 
+  .tariff__list {
+    position: relative;
+    left: -560px;
+    border-collapse: collapse;
 
+    @media (min-width: @tablet-width) {
+      position: static;
+    }
+
+    td {
+      padding: 12px 0 12px 0;
+      border: 2px solid #E5E5E5;
+      border-radius: 1px 0px 0px 0px;
+      text-align: right;
+
+      @media (min-width: @tablet-width) {
+        text-align: center;
+        padding: 0;
+      }
+    }
+
+    td img {
+      margin-right: 20px;
+    }
+
+    .color {
+      background: @verydarkdesaturatedblue;
+    }
+
+    .color-line {
+      position: relative;
+      border-left: 2px solid @veryverylightgray;
+      border-right: 2px solid @veryverylightgray;
+    }
+
+    .red-hit {
+      position: absolute;
+      top: 9px;
+      left: -18px;
+      width: 30px;
+      height: 0;
+      border-bottom: 20px solid @strongpink;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      transform: rotate(-45deg);
+    }
+
+    .red-hit-text {
+      position: absolute;
+      margin: 0;
+      top: -5px;
+      left: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: @white;
+    }
+
+    .tariff__description {
+      margin: 0;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 30px;
+      color: @white;
+    }
+
+    .tariff__number {
+      margin: 0;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 30px;
+      color: @white;
+    }
+
+    .cell {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: left;
+    }
+
+    .table-text {
+      position: absolute;
+      padding-left: 20px;
+      color: @verydarkdesaturatedblue;
+
+      @media (min-width: @tablet-width) {
+        position: static;
+      }
+    }
+
+    .text1 {
+      top: 60px;
+      left: 560px;
+    }
+
+    .text2 {
+      top: 120px;
+      left: 560px;
+    }
+
+    .text3 {
+      top: 180px;
+      left: 560px;
+    }
+  }
+
+  .tariff__item th,td {
+    min-width: 276px;
+  }
+
+  .tariff__item .mobile-version {
+    position: relative;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+
+    .tariff__item th,td {
+      min-width: 0;
+    }
+
+    .tariff__item .tariff__description {
+      margin-top: 6px;
+    }
+
+    .tariff__item .tariff__number {
+      margin-bottom: 6px;
+    }
+
+    .tariff__item td:nth-child(2n) {
+      width: 148px;
+    }
+
+    .tariff__item td:nth-child(3) {
+      width: 149px;
+    }
+
+    .cell {
+      width: 149px;
+    }
+
+    .cell .table-text {
+      padding-left: 15px;
+      text-transform: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+
+    .color-line .red-hit {
+      top: 19px;
+      left: -21px;
+      width: 60px;
+    }
+
+    .color-line .red-hit-text {
+      top: -5px;
+      left: 15px;
+    }
+
+    .tariff__item .tariff__description{
+      font-size: 18px;
+      margin-top: 15.5px;
+    }
+
+    .tariff__item .tariff__number {
+      font-size: 24px;
+      margin-bottom: 15.5px;
+    }
+
+    .tariff__item td:nth-child(2n) {
+      width: 229px;
+    }
+
+    .tariff__item td:nth-child(3) {
+      width: 230px;
+    }
+
+    .cell {
+      width: 230px;
+    }
+
+    .cell .table-text {
+      margin: 12.5px 0;
+      padding-left: 22px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
 
 
 
