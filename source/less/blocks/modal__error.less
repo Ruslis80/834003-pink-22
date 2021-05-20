@@ -1,7 +1,7 @@
 .modal__error {
-  display: flex;
-  flex-direction: column;
+  display: none;
   width: 460px;
+  margin: 0 auto;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
 
@@ -9,10 +9,8 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
-    outline: 3px solid rgba(72, 255, 0, 0.8);
-    outline-offset: -3px;
   }
 
   h2 {
@@ -53,11 +51,15 @@
     background-color: @darkcyanlimegreen;
   }
 
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
   @media (min-width: @desktop-width) {
     width: 780px;
 
     .modal-error__wrapper {
-      width: 400px;
+      width: 408px;
     }
 
     br {
@@ -68,8 +70,16 @@
       content: "\00a0";
     }
 
+    .button-error--wrapper {
+      background-color: @verylightgray;
+    }
+
     p {
-      text-align: initial;
+      margin-bottom: 56px;
+    }
+
+    .modal__background-button-error {
+      padding-top: 52px;
     }
   }
 }
