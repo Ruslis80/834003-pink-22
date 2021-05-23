@@ -16,9 +16,15 @@
     text-decoration: none;
   }
 
+  .footer-desktop {
+    display: none;
+  }
+
   .social__list{
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    padding: 0;
   }
 
   .page-footer__copyright {
@@ -45,7 +51,7 @@
 
     .page-footer__heading {
       margin: 0;
-      margin-top: 36px;
+      margin-top: 40px;
     }
 
     .page-footer__social {
@@ -53,14 +59,17 @@
     }
 
     .social__list {
-      margin-top: 50px;
+      margin-top: 40px;
     }
 
     .page-footer__copyright {
       margin: 0;
-      margin-top: 40px;
-      margin-bottom: 45px;
-      margin-right: 10px;
+      margin-top: 50px;
+      margin-bottom: 35px;
+    }
+
+    .copyright__text {
+      padding-left: 15px;
     }
   }
 
@@ -69,25 +78,48 @@
 
     .page-footer__heading {
       margin-top: 70px;
-      margin-bottom: 87px;
+      margin-bottom: 74px;
       padding: 0;
     }
 
+    .footer-desktop {
+      display: block;
+    }
+
+    .footer-tablet-logo {
+      display: none;
+    }
+
     .social__list {
-      margin-top: 80px;
+      margin-top: 75px;
     }
 
     .page-footer__copyright {
       margin-top: 81px;
-      margin-bottom: 82px;
+      margin-bottom: 74px;
       padding-top: 0;
       padding-right: 10px;
     }
 
     .copyright__text {
+      padding-left: 0;
       font-size: 18px;
     }
   }
+}
+
+.social__link:hover circle {
+  opacity: 1;
+}
+
+.social__link:focus circle,
+.social__link:active circle {
+  opacity: 0.1;
+}
+
+.social__link:focus path,
+.social__link:active path {
+  fill-opacity: 0.3;
 }
 
 .page-footer__logo:hover path {
