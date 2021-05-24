@@ -1,6 +1,6 @@
 .proposal {
   margin-top: 46px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .proposal__wrapper {
@@ -51,6 +51,7 @@
 // Our__proposals
 
 .our__proposals {
+  background: linear-gradient(-5deg, #f2f2f2 93%, #ffffff 7%);
   background-color: @verylightgray;
 }
 
@@ -68,6 +69,7 @@
     flex-direction: column;
     list-style: none;
     padding: 0;
+    padding-top: 40px;
 
     .proposal__title {
       font-weight: bold;
@@ -92,6 +94,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .our__proposals {
+    background: linear-gradient(-5deg, #f2f2f2 82%, #ffffff 8%);
+  }
+
   .our-proposals__wrapper {
     width: 620px;
     grid-template-columns: 1fr 1fr;
@@ -102,35 +108,58 @@
     .proposal__list {
       grid-column-start: 2;
       grid-column-end: 4;
+      margin-bottom: 0;
+      margin-top: 30px;
 
       .proposal__item {
         text-align: left;
       }
 
       .proposal__item:last-child {
-        padding-bottom: 49px;
+        padding-bottom: 22px;
       }
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .our__proposals {
+    background: linear-gradient(-5deg, #f2f2f2 82%, #ffffff 8%);
+  }
+
   .our-proposals__wrapper {
     width: 940px;
     grid-template-columns: 1fr;
-    background:
-    url("../img/gallery/page-main/proposal/desktop/iphone-screen1.jpg") no-repeat 9% 45px,
-    url("../img/gallery/page-main/proposal/desktop/iphone1.png") no-repeat 8% 5px;
+    background: none;
 
     .proposal__list {
       grid-column-start: 1;
       grid-column-end: 4;
       flex-direction: row;
       justify-content: space-around;
+      padding-top: 0;
 
       .proposal__item {
         width: 300px;
-        padding-top: 307px;
+        padding-top: 400px;
+      }
+
+      .item-one {
+        background:
+        url("../img/gallery/page-main/proposal/desktop/iphone-screen1.jpg") no-repeat 50% 45px,
+        url("../img/gallery/page-main/proposal/desktop/iphone1.png") no-repeat 50% 5px;
+      }
+
+      .item-two {
+        background:
+        url("../img/gallery/page-main/proposal/desktop/iphone-screen2.jpg") no-repeat 50% 45px,
+        url("../img/gallery/page-main/proposal/desktop/iphone2.png") no-repeat 50% 5px;
+      }
+
+      .item-three {
+        background:
+        url("../img/gallery/page-main/proposal/desktop/iphone-screen3.jpg") no-repeat 50% 45px,
+        url("../img/gallery/page-main/proposal/desktop/iphone3.png") no-repeat 50% 5px;
       }
 
       .proposal__item:last-child {
@@ -147,6 +176,12 @@
         text-align: center;
         font-size: 18px;
         line-height: 30px;
+        margin-bottom: 76px;
+        padding: 0 30px;
+      }
+
+      .center-text {
+        padding: 0 35px;
       }
     }
   }
@@ -249,6 +284,48 @@
     .research__larger {
       font-size: 18px;
       line-height: 30px;
+    }
+  }
+}
+
+// Map
+
+.map__wrapper {
+  width: 320px;
+  height: 200px;
+  margin: 0 auto;
+
+  .map-tablet {
+    display: none;
+  }
+
+  .map-desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 374px;
+
+    .map-mobile {
+      display: none;
+    }
+
+    .map-tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 502px;
+
+    .map-tablet {
+      display: none;
+    }
+
+    .map-desktop {
+      display: block;
     }
   }
 }
